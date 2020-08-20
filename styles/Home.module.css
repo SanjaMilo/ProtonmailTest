@@ -1,4 +1,153 @@
-.container {
+.listContainer {
+  background-color: #f1f1f1;
+  min-height: 100vh;
+}
+
+.listContainer h1 {
+  margin-top: 0.5rem;
+}
+
+/* HEADER  */
+
+.headerNav {
+  height: 20%;
+  font-display: flex;
+  background-color: #f1f1f1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.textAlignEnd {
+  text-align: end;
+}
+
+.select {
+  padding: 5px 15px;
+  color: #999;
+  letter-spacing: 1px;
+  border: 2px solid #999;
+  border-radius: 5px;
+  margin-left: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.select:focus,
+.select:active,
+.select:hover {
+  border: 2px solid rgb(147, 153, 189);
+  outline: none;
+  color: rgb(147, 153, 189);
+}
+
+/* CARDS */
+
+.cardsRow {
+  padding: 1rem 2rem;
+}
+
+.colCards {
+  position: relative;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #999;
+  padding: 0px;
+}
+
+.colCards:last-of-type {
+  border-right: 1px solid #999;
+}
+
+.cards {
+  text-align: center;
+  border-radius: 0px;
+  height: 100%;
+}
+
+.title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.selectBtn {
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(147, 153, 189);
+  border-color: rgb(147, 153, 189);
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.selectBtn:hover {
+  background-color: #999;
+  border-color: #999;
+}
+
+span.mostPopular {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(8, 223, 8);
+  font-weight: 500;
+}
+
+div.body {
+  padding: 3rem 2rem 6rem 2rem;
+}
+
+.parag {
+  text-align: left;
+  font-size: 14px;
+}
+
+.iconArrow {
+  margin-right: 1rem;
+}
+
+span.bigNumber {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(147, 153, 189);
+}
+
+.textP {
+  margin-bottom: 0rem;
+}
+
+span.price {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 991px) {
+  .colCards:nth-of-type(2) {
+    border-right: 1px solid #999;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .colCards {
+    border-right: 1px solid #999;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .listContainer h1 {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* .container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -120,4 +269,4 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */
